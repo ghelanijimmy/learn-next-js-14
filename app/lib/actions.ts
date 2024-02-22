@@ -126,6 +126,7 @@ export async function authenticate(
 }
 
 export async function testJSONData() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return {
     message: 'Hello, World!',
   };

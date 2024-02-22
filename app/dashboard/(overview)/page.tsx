@@ -8,12 +8,8 @@ import {
 } from '@/app/ui/skeletons';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
-import { testJSONData } from '@/app/lib/actions';
 
 export default async function Page() {
-  const testData = await testJSONData();
-  console.log(testData);
-
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
